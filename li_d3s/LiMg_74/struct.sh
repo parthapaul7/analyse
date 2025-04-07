@@ -2,53 +2,50 @@
 # Original structure file
 input_file="POSCAR"
 
+# Read lattice vectors from POSCAR (lines 3, 4, 5)
+read -r cell_len11 cell_len12 cell_len13 < <(awk 'NR==3 {print $1, $2, $3}' "$input_file")
+read -r cell_len21 cell_len22 cell_len23 < <(awk 'NR==4 {print $1, $2, $3}' "$input_file")
+read -r cell_len31 cell_len32 cell_len33 < <(awk 'NR==5 {print $1, $2, $3}' "$input_file")
+
 # Function to increment the cell length values
 increment_cell_length() {
-    local input_value=$1
-    local increment=$2
-    local factor=$3
-    awk -v val="$input_value" -v inc="$increment" -v fac="$factor" 'BEGIN { printf "%.10f", val + inc * fac }'
+    local base_value=$1
+    local scaling=$2
+    awk -v base="$base_value" -v scale="$scaling" 'BEGIN { printf "%.10f", base + scale }'
 }
 
-# Loop to create 5 new structure files with incremented cell lengths
-for ((i=-5; i<13; i++)); do
-    # Calculate new cell lengths
-    new_cell_len11=$(increment_cell_length 1.3893840312921046 $(echo "0.05*$i " | bc) 1.3893840312921046 )
-    new_cell_len12=$(increment_cell_length 0.8021612444742640 $(echo "0.05*$i " | bc) 0.8021612444742640 )
-    new_cell_len13=$(increment_cell_length 8.3478527068999995 $(echo "0.05*$i " | bc) 8.3478527068999995 )
-    new_cell_len21=$(increment_cell_length -1.3893840312921046 $(echo "0.05*$i " | bc) -1.3893840312921046 )
-    new_cell_len22=$(increment_cell_length 0.8021612444742640 $(echo "0.05*$i " | bc) 0.8021612444742640 )
-    new_cell_len23=$(increment_cell_length 8.3478527068999995 $(echo "0.05*$i " | bc) 8.3478527068999995 )
-    new_cell_len31=$(increment_cell_length 0.0000000000000000 $(echo "0.05*$i " | bc) 0.000000000000000  )
-    new_cell_len32=$(increment_cell_length -1.6043224889485279 $(echo "0.05*$i " | bc) -1.6043224889485279 )
-    new_cell_len33=$(increment_cell_length 8.3478527068999995 $(echo "0.05*$i " | bc) 8.3478527068999995 )
-    
-    # Create new structure file with incremented cell lengths
+# Loop to create new structure files with incremented cell lengths
+for ((i=-5; i<30; i++)); do
+    scale=$(echo "0.05 * $i" | bc -l)
+
+    new_cell_len11=$(increment_cell_length "$cell_len11" "$(echo "$scale * $cell_len11" | bc -l)")
+    new_cell_len12=$(increment_cell_length "$cell_len12" "$(echo "$scale * $cell_len12" | bc -l)")
+    new_cell_len13=$(increment_cell_length "$cell_len13" "$(echo "$scale * $cell_len13" | bc -l)")
+
+    new_cell_len21=$(increment_cell_length "$cell_len21" "$(echo "$scale * $cell_len21" | bc -l)")
+    new_cell_len22=$(increment_cell_length "$cell_len22" "$(echo "$scale * $cell_len22" | bc -l)")
+    new_cell_len23=$(increment_cell_length "$cell_len23" "$(echo "$scale * $cell_len23" | bc -l)")
+
+    new_cell_len31=$(increment_cell_length "$cell_len31" "$(echo "$scale * $cell_len31" | bc -l)")
+    new_cell_len32=$(increment_cell_length "$cell_len32" "$(echo "$scale * $cell_len32" | bc -l)")
+    new_cell_len33=$(increment_cell_length "$cell_len33" "$(echo "$scale * $cell_len33" | bc -l)")
+
     output_file="POSCAR$i"
 
-    # Ensure Unix-style line endings by using `awk` and formatting consistently
-    awk -v new_cell_len11="$new_cell_len11" \
-        -v new_cell_len12="$new_cell_len12" \
-        -v new_cell_len13="$new_cell_len13" \
-        -v new_cell_len21="$new_cell_len21" \
-        -v new_cell_len22="$new_cell_len22" \
-        -v new_cell_len23="$new_cell_len23" \
-        -v new_cell_len31="$new_cell_len31" \
-        -v new_cell_len32="$new_cell_len32" \
-        -v new_cell_len33="$new_cell_len33" \
-        'BEGIN { OFS=" " }
-         {
-            if (NR == 3) {
-                printf "%18.10f %18.10f %18.10f\n", new_cell_len11, new_cell_len12, new_cell_len13 
-            } else if (NR == 4) {
-                printf "%18.10f %18.10f %18.10f\n", new_cell_len21, new_cell_len22, new_cell_len23
-            } else if (NR == 5){     
-		printf "%18.10f %18.10f %18.10f\n", new_cell_len31, new_cell_len32 , new_cell_len33
-            } else {
+    # Replace lines 3–5 in POSCAR and write to new file
+    awk -v a11="$new_cell_len11" -v a12="$new_cell_len12" -v a13="$new_cell_len13" \
+        -v a21="$new_cell_len21" -v a22="$new_cell_len22" -v a23="$new_cell_len23" \
+        -v a31="$new_cell_len31" -v a32="$new_cell_len32" -v a33="$new_cell_len33" \
+        '{
+            if (NR == 3)
+                printf "%18.10f %18.10f %18.10f\n", a11, a12, a13;
+            else if (NR == 4)
+                printf "%18.10f %18.10f %18.10f\n", a21, a22, a23;
+            else if (NR == 5)
+                printf "%18.10f %18.10f %18.10f\n", a31, a32, a33;
+            else
                 print
-            }
-         }' "$input_file" | tr -d '\r' > "$output_file"
+        }' "$input_file" > "$output_file"
 
-    echo "Created $output_file with new cell lengths: $new_cell_length, $new_cell_len11, $new_cell_len22"
+    echo "Created $output_file with scaled lattice vectors (scale = $scale)"
 done
-
