@@ -65,6 +65,6 @@ Atom-resolved dispersion energies:
     12   32 Ge  -0.55621439E-02     -3.49029798
 --------------------------------------------------
 
-Dispersion energy:      -5.2196850853706E-02 Eh
+Dispersion energy:      -5.2196850853707E-02 Eh
 
 [Info] Dispersion energy written to .EDISP

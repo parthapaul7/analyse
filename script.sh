@@ -21,7 +21,7 @@ cd "$FOLDER" || exit
 mkdir -p results
 
 # Loop through POSCAR files from POSCAR to POSCAR20
-for i in {-5..20}; do
+for i in {-5..29}; do
     input_file="POSCAR$i"
     output_file="results/out$i.txt"
     
