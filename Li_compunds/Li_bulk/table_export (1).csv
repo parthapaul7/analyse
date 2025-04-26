@@ -1,0 +1,282 @@
+,Synthesizable,Material ID,Formula,Crystal System,Space Group Symbol,Space Group Number,Sites,Energy Above Hull,Formation Energy,Predicted Stable,Volume,Density,Band Gap,Is Gap Direct,Is Metal,Magnetic Ordering,Total Magnetization,"Bulk Modulus, Voigt","Bulk Modulus, Reuss","Bulk Modulus, VRH","Shear Modulus, Voigt","Shear Modulus, Reuss","Shear Modulus, VRH",Elastic Anisotropy,Weighted Surface Energy,Surface Anisotropy,Shape Factor,Work Function,Piezoelectric Modulus,Total Dielectric Constant,Ionic Dielectric Constant,Static Dielectric Constant,Structure
+0,False,mp-10173,Li,Hexagonal,P6_3/mmc,194,2,0.005987748333333,0.005987748333333,False,40.20915440845307,0.573292417154018,0.0,False,True,NM,0.0029984,,,,,,,0.232,0.5017421661458831,0.024989288259194,5.025631250482655,2.9236049349905473,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.01479638
+_cell_length_b   3.01479643
+_cell_length_c   5.10832220
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99998873
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li2
+_cell_volume   40.20915441
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.33333300  0.66666700  0.25000000  1
+  Li  Li1  1  0.66666700  0.33333300  0.75000000  1
+"
+1,False,mp-1018134,Li,Trigonal,R-3m,166,3,0.0,0.0,True,61.205660097660434,0.5649380290750841,0.0,False,True,NM,4.26e-05,,,,,,,1.763,,,,,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.07867429
+_cell_length_b   3.07867244
+_cell_length_c   7.66540779
+_cell_angle_alpha   78.41531399
+_cell_angle_beta   78.41531202
+_cell_angle_gamma   59.99999673
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li3
+_cell_volume   61.20566010
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.77702792  0.77702792  0.66891525  1
+  Li  Li1  1  0.22297208  0.22297208  0.33108475  1
+  Li  Li2  1  -0.00000000  0.00000000  0.00000000  1
+"
+2,True,mp-1063005,Li,Hexagonal,P6/mmm,191,3,0.015670883333333,0.015670883333333,False,61.27228985134278,0.5643236945722541,0.0,False,True,NM,1.86e-05,,,,,,,4.817,,,,,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   2.88884300
+_cell_length_b   4.94883212
+_cell_length_c   4.94890126
+_cell_angle_alpha   120.00045040
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li3
+_cell_volume   61.27228985
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.00000000  0.00000000  0.00000000  1
+  Li  Li1  1  0.50000000  0.33324200  0.66662000  1
+  Li  Li2  1  0.50000000  0.66675800  0.33338000  1
+"
+3,True,mp-1103107,Li,Orthorhombic,Cmce,64,12,0.055379472500000006,0.055379472500000006,False,242.5665872337491,0.570192381038717,0.0,False,True,NM,0.0007779,,,,,,,,,,,,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.51582021
+_cell_length_b   8.51582021
+_cell_length_c   5.40685900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   141.78363463
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li12
+_cell_volume   242.56658723
+_cell_formula_units_Z   12
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.75595300  0.75595300  0.59780900  1
+  Li  Li1  1  0.24404700  0.24404700  0.40219100  1
+  Li  Li2  1  0.74404700  0.74404700  0.09780900  1
+  Li  Li3  1  0.25595300  0.25595300  0.90219100  1
+  Li  Li4  1  0.78195900  0.45482100  0.75387100  1
+  Li  Li5  1  0.54517900  0.21804100  0.24612900  1
+  Li  Li6  1  0.04517900  0.71804100  0.25387100  1
+  Li  Li7  1  0.28195900  0.95482100  0.74612900  1
+  Li  Li8  1  0.21804100  0.54517900  0.24612900  1
+  Li  Li9  1  0.45482100  0.78195900  0.75387100  1
+  Li  Li10  1  0.95482100  0.28195900  0.74612900  1
+  Li  Li11  1  0.71804100  0.04517900  0.25387100  1
+"
+4,False,mp-135,Li,Cubic,Im-3m,229,1,0.009650863333333001,0.009650863333333001,False,20.34159020777027,0.5666126169854631,0.0,False,True,NM,8.3e-06,,,,,,,10.041,0.49685864646939104,0.043567476664761004,4.95112838378591,2.85122219945019,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   2.97853209
+_cell_length_b   2.97853163
+_cell_length_c   2.97853200
+_cell_angle_alpha   109.47122316
+_cell_angle_beta   109.47121999
+_cell_angle_gamma   109.47121482
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li1
+_cell_volume   20.34159021
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.00000000  0.00000000  0.00000000  1
+"
+5,False,mp-51,Li,Cubic,Fm-3m,225,1,0.001672373333333,0.001672373333333,False,20.347259270998425,0.5664547498885351,0.0,False,True,NM,3.799999999999998e-06,,,,,,,2.041,0.498828861581848,0.045052136820741,5.023858392593726,3.012683561914949,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.06436394
+_cell_length_b   3.06436321
+_cell_length_c   3.06436400
+_cell_angle_alpha   59.99999143
+_cell_angle_beta   59.99999934
+_cell_angle_gamma   60.00000411
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li1
+_cell_volume   20.34725927
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.00000000  0.00000000  0.00000000  1
+"
+6,False,mp-567337,Li,Cubic,I-43d,220,8,0.008819463333333001,0.008819463333333001,False,161.75350839454015,0.570042740991187,0.0,False,True,NM,0.0012269,,,,,,,,,,,,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.94509137
+_cell_length_b   5.94509137
+_cell_length_c   5.94509137
+_cell_angle_alpha   109.47122063
+_cell_angle_beta   109.47122063
+_cell_angle_gamma   109.47122063
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li8
+_cell_volume   161.75350839
+_cell_formula_units_Z   8
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.01159943  0.50000000  -0.00000000  1
+  Li  Li1  1  -0.00000000  0.01159943  0.50000000  1
+  Li  Li2  1  0.98840057  0.98840057  0.98840057  1
+  Li  Li3  1  -0.00000000  0.51159943  0.50000000  1
+  Li  Li4  1  0.51159943  0.50000000  -0.00000000  1
+  Li  Li5  1  0.48840057  0.48840057  0.48840057  1
+  Li  Li6  1  0.50000000  -0.00000000  0.01159943  1
+  Li  Li7  1  0.50000000  0.00000000  0.51159943  1
+"
+7,True,mp-604313,Li,Cubic,P4_132,213,4,0.26179874416666604,0.26179874416666604,False,88.38517740611074,0.521616949788403,0.0,False,True,NM,1.9100000000000003e-05,,,,,,,6.42,,,,,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.45444100
+_cell_length_b   4.45444100
+_cell_length_c   4.45443900
+_cell_angle_alpha   90.00002573
+_cell_angle_beta   90.00002573
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li4
+_cell_volume   88.38517741
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.87456800  0.12543200  0.62543200  1
+  Li  Li1  1  0.37456800  0.37456800  0.37456800  1
+  Li  Li2  1  0.12543200  0.62543200  0.87456800  1
+  Li  Li3  1  0.62543200  0.87456800  0.12543200  1
+"
+8,True,mp-976411,Li,Hexagonal,P6_3/mmc,194,4,0.005889090833333,0.005889090833333,False,81.46327565480371,0.5659385321116011,0.0,False,True,NM,0.0013356,,,,,,,0.134,0.500964631449701,0.022905083826726003,5.111463210280877,3.040171044347414,,,,,"# generated using pymatgen
+data_Li
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.03438553
+_cell_length_b   3.03438582
+_cell_length_c   10.21620767
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000782
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li
+_chemical_formula_sum   Li4
+_cell_volume   81.46327565
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.00000000  -0.00000000  0.00000100  1
+  Li  Li1  1  0.33333300  0.66666500  0.25000000  1
+  Li  Li2  1  0.00000000  -0.00000000  0.49999900  1
+  Li  Li3  1  0.66666800  0.33333300  0.75000000  1
+"
