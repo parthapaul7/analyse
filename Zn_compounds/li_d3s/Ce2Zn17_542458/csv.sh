@@ -13,12 +13,12 @@ for i in {-5..29}; do
 
     # Extract CN and C6 values from output file
     if [[ -f "$output_file" ]]; then
-        CN_cation=$(awk '$3 == "Li" {print $4; exit}' "$output_file")  # First row CN
-        C6_cation=$(awk '$3 == "Li" {print $5; exit}' "$output_file")  # First row CN
+        CN_cation=$(awk '$3 == "Ce" {print $4; exit}' "$output_file")  # First row CN
+        C6_cation=$(awk '$3 == "Ce" {print $5; exit}' "$output_file")  # First row CN
 	echo "$CN_cation"
 
-        CN_anion=$(awk '$3 == "Ag" {print $4; exit}' "$output_file")  # First row CN
-        C6_anion=$(awk '$3 == "Ag" {print $5; exit}' "$output_file")  # First row CN
+        CN_anion=$(awk '$3 == "Zn" {print $4; exit}' "$output_file")  # First row CN
+        C6_anion=$(awk '$3 == "Zn" {print $5; exit}' "$output_file")  # First row CN
 
         dispersion_energy=$(grep "Dispersion energy:" "$output_file" | awk '{print $3}')
     else
